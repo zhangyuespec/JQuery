@@ -1,0 +1,4 @@
+        第二步 更新代码库,指令为:sudo apt-get install update
+
+        第三步  安装软件,指令为:sudo apt-get install kchmviewer
+        第四步  打开软件:在终端中输入 kchmviewer ,直接可以打开该软件,软件页面如下

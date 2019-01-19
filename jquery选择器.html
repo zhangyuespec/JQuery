@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script><!--不能直接撬开这里写-->
+    <script type="text/javascript">
+        /*
+        * jquery可以快速的选择元素，选择规则和css样式相同，使用length属性判断是是否选择成功
+            * $(#myid) 选择id为myid的网页元素
+            * $('.myclass') 选择class为myclass的元素
+            * $("li")   选择所有li元素
+            * $("#ul1 li span")  选择id为ul1元素下的所有li下的span元素
+            * $("input[name=first]")    选择name属性等于first的input属性
+        *
+        * 对选择集进行过滤
+            * $("div").has("p") 选择包含p元素的div元素
+            * $('div').not(".myclass")  选择class不等于myclass的div元素
+            * $('div').filter('.myclass')   选择class等于myclass的元素
+            * $('div').eq(5)    选择第六个div元素
+        * */
+        $(function () {
+            var $div = $(#div1);
+            var $div2 = $('.box');
+            var $li = $('.list li');
+
+            $div.css({'color': 'red'});
+            $div2.css({'color': 'green'});
+            $li.css({'color':'prink'});
+        });
+    </script>
+    <!--<style type="text/css">-->
+    <!--#div1{-->
+    <!--color: red;-->
+    <!--}-->
+
+    <!--.box{-->
+    <!--color: green;-->
+    <!--}-->
+
+    <!--.list li{-->
+    <!--background-color: mediumspringgreen;-->
+    <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<div id="div1">div1</div>
+
+<div class="box">div2</div>
+<div class="box">div3</div>
+
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+</html>

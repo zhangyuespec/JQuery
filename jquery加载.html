@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var oDiv = document.getElementById('div1');
+
+            alert('原声弹出的' + oDiv);
+        };
+
+        $(document).ready(function () {//这是jquery的写法，作用和原生js的window.onload作用是一样的
+            var $div = $('#div1');
+            alert('jquery弹出的' + $div);
+        });
+
+        //下面是上面jQuery完整写法的简写
+        $(function () {
+            var $div = $('#div1');
+            alert('jquery简写弹出的' + $div);
+        });
+
+    </script>
+</head>
+<body>
+<div id="div1">这是一个div元素</div>
+</body>
+</html>
