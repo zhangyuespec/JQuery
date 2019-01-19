@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .btns input{
+            width: 100px;
+            height: 40px;
+            background-color: grey;
+            border: 0;
+        }
+
+        .btns .current{
+            background-color: gold;
+        }
+
+        .cons div{
+            width: 500px;
+            height: 300px;
+            background-color: gold;
+            display: none;/*整体都不显示了*/
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+        }
+
+        .cons .active{
+            display: block;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $btn=$('.btns input');
+            var $div=$('.cons div');
+            // alert($btn.length);
+            // alert($div.length);
+
+            $btn.click(function () {
+                // 我点击哪一个按钮，$(this)就指的是谁,而this
+                //指的是原生的，$（this）指的是JQuery的
+                // $(this).siblings().removeClass('current');
+                // $(this).addClass('current');//可以用链式调用
+                $(this).addClass('current').siblings().removeClass('current');
+                var num=$(this).index();
+                $div.eq($(this).index()).addClass('active').sibling().removeClass('active');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="btns">
+        <input type="button" name="" value="01" class="current">
+        <input type="button" name="" value="02">
+        <input type="button" name="" value="03">
+    </div>
+
+    <div class="cons">
+        <div class="active">选项卡1的内容</div>
+        <div>选项卡2的内容</div>
+        <div>选项卡3的内容</div>
+    </div>
+</body>
+</html>
