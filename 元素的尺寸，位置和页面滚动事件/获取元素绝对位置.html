@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $div=$('.box');
+            //获取元素绝对位置
+            var oPos=$div.offset();
+            console.log(oPos);
+
+            $div.click(function () {
+              // alert(oPos.left);
+              document.title=oPos.left+"|"+oPos.top;
+            })
+        })
+    </script>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #f6b544;
+            margin: 50px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+           var $chart=$('.chart');
+           var $count=$('.chart em');
+           var $btn=$('.add');
+           var $point=$('.points');
+
+           var $w01=$btn.outerWidth();
+           var $h01=$btn.outerHeight();
+
+
+
+           $btn.click(function () {
+               var oPos01=$btn.offset();
+               var oPos02=$chart.offset();
+
+               $point.css({left:oPos01.left+parseInt($w01/2)-8,top:oPos01.top+parseInt($w01/2)-8}).show();/*移动到购物车按钮上，然后show*/
+               $point.animate({left:oPos02.left+parseInt($w01/2)-8,top:oPos02.top+parseInt($w01/2)-8},800,function () {
+                   $point.hide();
+
+                   var iNum=$count.html();/*读em里的信息*/
+                   $count.html(parseInt(iNum)+1);/*转换成int类型然后加一*/
+               });
+
+           })
+        });
+    </script>
+
+    <style type="text/css">
+        .chart{
+            width: 150px;
+            height: 50px;
+            border: 2px solid #000;
+            text-align: center;
+            line-height: 50px;
+            float: right;
+            margin-right:100px ;
+            margin-top: 100px;
+        }
+
+        .chart em{
+            font-style: normal;
+            color: red;
+            font-weight: bold;
+        }
+
+        .add{
+            width: 100px;
+            height: 50px;
+            border: 0;/*去掉边框*/
+            background-color: green;
+            color: #fff;
+            float: left;
+            margin-top: 300px;
+            margin-left: 300px;
+        }
+        .points{
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            position: fixed;/*固定定位，就是相对于页面位置的定位*/
+            left: 0;
+            top: 0;
+            display: none;/*把小红点藏起来*/
+            z-index: 999;/*这样设置小红点就能盖住其他元素*/
+        }
+    </style>
+</head>
+<body>
+    <div class="chart">购物车<em>0</em></div>
+    <input type="button" name="" value="加入购物车" class="add">
+    <div class="points"></div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            font-family: 'Microsoft Yahei';
+        }
+        body ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .menu{
+            width: 300px;
+            height: 300px;
+        }
+        .menu .level1,.menu li ul a {
+            display: block;
+            width: 300px;
+            height: 30px;
+            line-height: 30;
+            text-decoration: none;
+            background-color: #3366cc;
+            color: #fff;
+            font-size: 16px;
+            text-indent: 10px;
+        }
+        .menu .level1{
+            border-bottom: 1px solid #afc6f6;
+        }
+
+        .menu li ul a {
+            font-size: 14px;
+            text-indent: 20px;
+            background-color: #7aa1ef;
+        }
+        .menu li ul li{
+            border-bottom: 1px solid #afc6f6;
+        }
+
+        .menu li ul {
+            display: none;
+        }
+        .menu li ul li a:hover{
+            background-color: #f6b544;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.level1').click(function () {
+                $(this).next().stop().slideToggle().parent().sibling().children('ul').slideUp();
+            })
+        })
+    </script>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#" class="level1">水果</a>
+            <ul class="current">
+                <li><a href="#">苹果</a></li>
+                <li><a href="#">梨子</a></li>
+                <li><a href="#">葡萄</a></li>
+                <li><a href="#">火龙果</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="level1">海鲜</a>
+            <ul>
+                <li><a href="#">鱼</a></li>
+                <li><a href="#">扇贝</a></li>
+                <li><a href="#">龙虾</a></li>
+                <li><a href="#">象牙蚌</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="level1">肉类</a>
+            <ul>
+                <li><a href="#">牛肉</a></li>
+                <li><a href="#">猪肉</a></li>
+                <li><a href="#">肌肉</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
