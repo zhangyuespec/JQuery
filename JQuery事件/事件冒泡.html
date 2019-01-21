@@ -6,15 +6,18 @@
     <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            $('.son').click(function () {
+            $('.son').click(function (event) {//event就是一个事件对象
+                //用这个事件对象就能使用事件对象的方法
                 alert(1);
+                // event.stopPropagation();//阻止事件对象冒泡
             });
 
             $('.father').bind('click',function () {
                 alert(2);
+                return false;
             });
 
-            $('.grandfather').bind('mouseover',function () {
+            $('.grandfather').bind('click',function () {
                 alert(3);
             });
         })
