@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /*$('#input01').focus(function () {
+            alert('获得焦点');/!*其实就是光标在输入框的时候叫做获得焦点*!/
+        })*///在获得焦点的时候做什么事情
+
+        $('#input01').focus();//这就是一进去页面的时候就获得焦点
+        $('#input01').blur(function () {/*失去焦点的时候处理函数*/
+            alert('失去焦点');
+        })
+    })
+</script>
+<body>
+<form action="">
+    <input type="text" id="input01">
+    <input type="text" id="input02">
+    <input type="submit" name="" value="提交" id="sub">
+</form>
+
+</body>
+</html>

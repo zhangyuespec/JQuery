@@ -4,7 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<style type="text/css">
+    .list{
+        background-color: gold;
+        list-style-type: none;
+        padding: 10px;
+    }
+    .list li{
+        height: 30px;
+        background-color: green;
+        margin: 10px;
+    }
+</style>
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /*$('.list li').click(function () {
+            $(this).css({backgroundColor:'red'});
+        });*///写成事件委托的方式,把委托的事件放在父级
+        $('.list').delegate('li','click',function () {
+            $(this).css({backgroundColor:'red'});
+        });
 
+        //新建li元素复制给$li变量
+        var $li=$('<li>9</li>');
+        $('.list').append($li);//把新建元素放到ul子集最后面。这就是节点操作
+    })
+</script>
+<body>
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
 </body>
 </html>
