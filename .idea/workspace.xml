@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4fd9c33-29fc-417c-9a99-f08f36dc6c02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JQuery的节点操作/a链接的href属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery的节点操作/todolist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JQuery的节点操作/todolist案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/整屏滚动/鼠标滚轮事件.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,13 +42,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="38" />
+          <entry key="HTML" value="40" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="10364" />
+          <entry key="HTML" value="10511" />
           <entry key="JavaScript" value="1" />
           <entry key="Python" value="70" />
         </counts>
@@ -59,15 +57,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/元素的尺寸，位置和页面滚动事件/置顶菜单.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery事件/blur和focuse事件.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,14 +102,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JQuery的节点操作/todolist案例.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" lean-forward="true" selection-end-line="122" selection-end-column="7" />
+            <state relative-caret-position="290">
+              <caret line="50" column="74" lean-forward="true" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
               <folding>
                 <element signature="e#1957#1989#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/整屏滚动/鼠标滚轮事件.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/整屏滚动/整屏滚动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2366">
+              <caret line="106" column="34" lean-forward="true" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -139,15 +146,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
               <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JQuery事件/鼠标事件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -202,6 +200,8 @@
         <option value="$PROJECT_DIR$/JQuery的节点操作/a.html" />
         <option value="$PROJECT_DIR$/JQuery的节点操作/a链接的href属性.html" />
         <option value="$PROJECT_DIR$/JQuery的节点操作/todolist案例.html" />
+        <option value="$PROJECT_DIR$/整屏滚动/整屏滚动.html" />
+        <option value="$PROJECT_DIR$/整屏滚动/鼠标滚轮事件.html" />
       </list>
     </option>
   </component>
@@ -211,7 +211,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="32" />
     <option name="width" value="1853" />
@@ -232,7 +232,7 @@
             <path>
               <item name="JQuery" type="b2602c69:ProjectViewProjectNode" />
               <item name="JQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="JQuery的节点操作" type="462c0819:PsiDirectoryNode" />
+              <item name="整屏滚动" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,7 +311,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="32" width="1853" height="1048" extended-state="6" />
+    <frame x="67" y="32" width="1853" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14396887" />
@@ -585,13 +585,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/整屏滚动/鼠标滚轮事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JQuery的节点操作/todolist案例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-end-line="122" selection-end-column="7" />
+        <state relative-caret-position="290">
+          <caret line="50" column="74" lean-forward="true" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
           <folding>
             <element signature="e#1957#1989#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/整屏滚动/整屏滚动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2366">
+          <caret line="106" column="34" lean-forward="true" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
         </state>
       </provider>
     </entry>
