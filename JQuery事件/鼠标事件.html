@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .con{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.box').mouseover(function () {
+                alert('鼠标移入');
+            });
+            $('.con').mouseout(function () {
+                alert('鼠标移除');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

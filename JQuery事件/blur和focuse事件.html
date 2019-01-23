@@ -14,13 +14,16 @@
         $('#input01').focus();//这就是一进去页面的时候就获得焦点
         $('#input01').blur(function () {/*失去焦点的时候处理函数*/
             alert('失去焦点');
-        })
+        });
+        $('#form1').submit(function () {
+            alert('提交');
+        });
     })
 </script>
 <body>
-<form action="">
-    <input type="text" id="input01">
-    <input type="text" id="input02">
+<form id="form1" action="http://www.baidu.com">
+    <input type="text" name="dat01" id="input01" >
+    <input type="text" name="dat02" id="input02" >
     <input type="submit" name="" value="提交" id="sub">
 </form>
 
