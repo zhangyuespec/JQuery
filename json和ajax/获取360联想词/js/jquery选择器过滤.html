@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $div=$('div')
+            $div.css({backgroundColor:'red'});
+            $div.has('p').css({backgroundColor:"green"});
+            $div.eq(4).css({textIndent:'20px'});
+        })
+    </script>
+</head>
+<body>
+    <div>1</div>
+    <div><p>2</p></div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</body>
+</html>
