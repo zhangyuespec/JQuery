@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+            url:'data.json',
+            type:'get',
+            dataType:'json'
+        })
+            .done(function (data) {
+            $("#username").html(data.name);
+            $("#userage").html(data.age);
+        })
+            .fail(function () {
+                alert("服务器超时555");
+            })
+        })
+
+
+    </script>
 </head>
 <body>
-    <h1>test server</h1>
+    <p>姓名：<span id="username"></span></p>
+    <p>年龄：<span id="userage"></span></p>
 </body>
 </html>
