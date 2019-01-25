@@ -10,8 +10,12 @@
             $('.box').draggable({
                 // axis:'x',/*限制在x轴拖动*/
                 containment:'parent',/*限制在父级的框里拖动*/
+                opacity:0.6,
                 drag:function (ev, ui) {
                     console.log(ui);
+                    var num=$('.box').offset().left;
+                    document.title=num;
+                    $('.box02').val(num);
                 }
             });/*这样盒子就能拖动了*/
 
@@ -28,12 +32,27 @@
             height: 200px;
             border: 1px solid #000;
             margin: 50px auto 0;
+            position: relative;
+        }
+        .box02{
+            height: 200px;
+            width: 50px;
+            /*background-color: #7aa1ef;*/
+            position: absolute;
+            left: 820px;
+            top: 0;
         }
     </style>
 </head>
 <body>
+<ul>
     <div class="con">
         <div class="box"></div>
+        <input type="text" name="" class="box02">
     </div>
+
+
+</ul>
+
 </body>
 </html>
