@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.box').draggable({
+                // axis:'x',/*限制在x轴拖动*/
+                containment:'parent',/*限制在父级的框里拖动*/
+                drag:function (ev, ui) {
+                    console.log(ui);
+                }
+            });/*这样盒子就能拖动了*/
+
+        })
+    </script>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+        .con{
+            width: 800px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
